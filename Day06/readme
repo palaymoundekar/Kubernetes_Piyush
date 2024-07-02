@@ -1,0 +1,24 @@
+create single cluster 
+kind create cluster --name cluster1 --image kindest/node:v1.30.0@sha256:047357ac0cfea04663786a612ba1eaba9702
+
+create multi node cluster
+kind create cluster --name cluster2 --image kindest/node:v1.30.0@sha256:047357ac0cfea04663786a612ba1eaba9702bef25227a794b52890dd8bcd692e --config=config.yaml
+
+to check list of clusters  
+kind get clusters
+
+TO get list of clusters using kubectl with details
+kubectl config get-contexts
+
+To switch from one cluster to another cluster.
+kubectl config use-context kind-cluster1
+
+To delete the cluster 
+kind delete cluster --name cluster2
+
+
+
+
+
+
+
