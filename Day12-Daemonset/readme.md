@@ -4,5 +4,3 @@ We dont have to provide replicas in daemonset yaml file.
 Q:- If all the nodes created copy of pod,then we should we cross verify that this pod is the copy of this node.
 
 adding test line
-
-for revert commit
