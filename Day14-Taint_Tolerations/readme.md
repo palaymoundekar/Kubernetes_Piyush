@@ -1,4 +1,4 @@
-In Taint and toleration, node will check the taint (gpu=true),if the taint is machting then it connect otherwise node will restrict the pod.
+In Taint and toleration, node will check the taint (gpu=true),if the taint is machting the pod then it connect otherwise node will restrict the pod.
 
 To taint the node.
 kubectl.exe taint nodes cluster-2-worker gpu=true:NoSchedule
